@@ -6,6 +6,7 @@
     "stroke":   "#000000"
   },
   "map": [
+    "             E      ",
     "XXXXXXXXXXXXXXXXXHXX",
     "                 H  ",
     "                 H  ",
@@ -140,7 +141,7 @@
     "H           0       ",
     "H  3       XX       ",
     "XXHXXXX   XXXX2     ",
-    "  E      X    XXX   ",
+    "  H      X    XXX   ",
     "  H     X           ",
     "  H    X          X ",
     "  H                 ",

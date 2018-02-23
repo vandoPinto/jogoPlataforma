@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 body            { background: #111; }
-#tower          { position: absolute;  width: 100%; height: 100%;background: #111;}
+#tower          { position: absolute;  width: 100%; height: 95%;background: #111;}
 #hud            {  position: absolute; 
     left: 80%;
     top: 5px;
@@ -8,7 +8,7 @@ body            { background: #111; }
     width: 8em; 
     opacity: 0.8;  }
 #score          { color: yellow; vertical-align: super; font-size: 2em; font-family: 'Cherry Swash', cursive }
-#canvas         { display: inline-block; width: 100%; height: 100%; }
+#canvas         { display: inline-block; width: 100%; height: 95%; }
 #instructions   { font-style: italic; height: 10%; color: #999; font-size: 9pt; margin-left: 1em; margin-top: 0.5em; }
 #instructions b { color: #DDD; }
 /*@media screen and (min-width:     0px) and (min-height:    0px) { #tower { width:  512px; height: 384px; font-size:  7pt; } } /* block = 16 */
@@ -16,3 +16,6 @@ body            { background: #111; }
 /*@media screen and (min-width:   968px) and (min-height:  626px) { #tower { width:  768px; height: 576px; font-size: 11pt; } } /* block = 24 */
 /*@media screen and (min-width:  1096px) and (min-height:  722px) { #tower { width:  896px; height: 672px; font-size: 13pt; } } /* block = 28 */
 @media screen and (min-width:  1224px) and (min-height:  818px) { #tower { width: 1024px; height: 768px; font-size: 15pt; } } /* block = 32 */
+#propaganda{
+    width: 100%; height: 5%;background: #111;
+}

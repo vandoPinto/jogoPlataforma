@@ -30,6 +30,8 @@ function inicializacao(inicio) {
   // CONSTANTS
   //===========================================================================
   var admobid = {};
+  var propaganda = Dom.get('propaganda');
+
   var LEVEL = ['level1', 'level2', 'level3', 'level4', 'level5', 'level6'],   // sprite image files for loading
     FPS = 60,                                                   // 'update' frame rate fixed at 60fps independent of rendering loop
     WIDTH = 720,                                                  // must have width multiple of 360...
@@ -110,7 +112,8 @@ function inicializacao(inicio) {
   function newGame() {
     if (levelFase < LEVEL.length) {
       console.log(levelFase);
-
+      mostrarInterstitial();
+      mostrarBanner();
       finalizou = false;
       Game.Load.json("levels/" + LEVEL[levelFase], function (level) {
         setup(imagem, level);
@@ -132,6 +135,7 @@ function inicializacao(inicio) {
             render: render
           });
           iniciarControles();
+          mostrarInterstitial();
         }
       );
     });
@@ -1185,17 +1189,17 @@ function inicializacao(inicio) {
   //===========================================================================
   // LETS PLAY!
   //===========================================================================
-
+trace("inicio")
   run(inicio);
-  initAd();
+  
   //---------------------------------------------------------------------------
   function initAd() {
 
     if (!AdMob) { console.log('admob plugin not ready'); return; }
     if (/(android)/i.test(navigator.userAgent)) { // for android & amazon-fireos
       admobid = {
-        banner: 'ca-app-pub-6285246507445010/5877630332',
-        interstitial: 'ca-app-pub-6285246507445010/7893419581'
+        banner: 'ca-app-pub-6285246507445010/1084995315',
+        interstitial: 'ca-app-pub-6285246507445010/9864244281'
         /*banner: 'ca-app-pub-6869992474017983/9375997553',
         interstitial: 'ca-app-pub-6869992474017983/1657046752'*/
       };
@@ -1239,7 +1243,8 @@ function inicializacao(inicio) {
   }
 
   function trace(texto) {
-    $("#trace").html("" + texto);
+    //$("#trace").html("" + texto);
+    //alert(texto)
   }
 
 }
